@@ -13,5 +13,9 @@ class BasePage:
         return WebDriverWait(self.driver, time).until(expected_conditions.presence_of_element_located(locator),
                                                       message=f"Can not find element by locator {locator}")
 
+    def find_elements(self, locator, time=10):
+        return WebDriverWait(self.browser, time).until(expected_conditions.presence_of_all_elements_located(locator),
+                                                       message=f"Can not  find elements by locator {locator}")
+
     def go_to_site(self):
         return self.driver.get(self.base_url)
