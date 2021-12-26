@@ -1,5 +1,3 @@
-from selenium.webdriver.common.by import By
-
 EXPECTED_RESULT = '61 Keys Electronic Teaching Keyboard Digital Music Piano Instrument & Microphone'
 SEARCH = "piano"
 SITE = "https://www.ebay.com/"
